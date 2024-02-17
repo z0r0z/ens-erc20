@@ -1,0 +1,10 @@
+# Constants
+[Git Source](https://github.com/z0r0z/bridge-ens/blob/fa4cb021d70ae8425fb4517fbc4189aee20b9727/src/NameBridge.sol)
+
+### ASCII_MAP
+
+```solidity
+bytes constant ASCII_MAP =
+    hex"2d00020101000a010700016101620163016401650166016701680169016a016b016c016d016e016f0170017101720173017401750176017701780179017a06001a010500";
+```
+
