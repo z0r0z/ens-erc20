@@ -1,1 +1,2 @@
-NameBridgeTest:testBridgeName() (gas: 125618)
+NameTokenTest:testCreateToken() (gas: 64336)
+NameTokenTest:testTokenNode() (gas: 67669)
