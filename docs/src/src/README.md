@@ -1,7 +1,6 @@
 
 
 # Contents
-- [NameBridge](NameBridge.sol/contract.NameBridge.md)
-- [IArbInbox](NameBridge.sol/interface.IArbInbox.md)
-- [IENSHelper](NameBridge.sol/interface.IENSHelper.md)
-- [NameBridge constants](NameBridge.sol/constants.NameBridge.md)
+- [ENS_ERC20](ENS_ERC20.sol/contract.ENS_ERC20.md)
+- [IENSHelper](ENS_ERC20.sol/interface.IENSHelper.md)
+- [ENS_ERC20_FACTORY](ENS_ERC20.sol/contract.ENS_ERC20_FACTORY.md)

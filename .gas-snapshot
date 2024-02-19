@@ -1,2 +1,2 @@
-NameTokenTest:testCreateToken() (gas: 64336)
-NameTokenTest:testTokenNode() (gas: 67669)
+ENS_ERC20_TEST:testCreateToken() (gas: 64336)
+ENS_ERC20_TEST:testTokenNode() (gas: 67669)

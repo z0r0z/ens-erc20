@@ -1,8 +1,8 @@
-# [Name Bridge](https://github.com/z0r0z/namebridge)  [![License: AGPL-3.0-only](https://img.shields.io/badge/License-AGPL-black.svg)](https://opensource.org/license/agpl-v3/) [![solidity](https://img.shields.io/badge/solidity-%5E0.8.24-black)](https://docs.soliditylang.org/en/v0.8.24/) [![Foundry](https://img.shields.io/badge/Built%20with-Foundry-000000.svg)](https://getfoundry.sh/) ![tests](https://github.com/z0r0z/zenplate/actions/workflows/ci.yml/badge.svg)
+# [ENS ERC20](https://github.com/z0r0z/namebridge)  [![License: AGPL-3.0-only](https://img.shields.io/badge/License-AGPL-black.svg)](https://opensource.org/license/agpl-v3/) [![solidity](https://img.shields.io/badge/solidity-%5E0.8.24-black)](https://docs.soliditylang.org/en/v0.8.24/) [![Foundry](https://img.shields.io/badge/Built%20with-Foundry-000000.svg)](https://getfoundry.sh/) ![tests](https://github.com/z0r0z/ens-erc20/actions/workflows/ci.yml/badge.svg)
 
-ENS Name Bridge for Arbitrum Layer 2. OP soon too.
+`ENS ERC20` token generator designed to enable simple token bridging of ENS name ownership artifacts to L2s.
 
-Allows users to send a message to claim their ENS on L2. Uses msg.value for claim encoding and perceived simplicity.
+Each created ERC20 token is a minimal proxy clone with the immutable argument of an ENS `node` bytes32 that also serves as the salt of its create2 deterministic deployment. This is overall just very gas efficient. There will only ever be one ERC20 for each ENS `node`. Transfers of these ERC20 tokens are restricted to the then-current owner of the ENS name or `node` or accounts that receive an approval. This means that there is a revokable permission to send these tokens. The use case for this is to allow L2 bridges to pull and return tokens. This may or not work but let's try and see.
 
 ## Getting Started
 

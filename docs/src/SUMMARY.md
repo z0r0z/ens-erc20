@@ -1,7 +1,6 @@
 # Summary
 - [Home](README.md)
 # src
-  - [NameBridge](src/NameBridge.sol/contract.NameBridge.md)
-  - [IArbInbox](src/NameBridge.sol/interface.IArbInbox.md)
-  - [IENSHelper](src/NameBridge.sol/interface.IENSHelper.md)
-  - [NameBridge constants](src/NameBridge.sol/constants.NameBridge.md)
+  - [ENS_ERC20](src/ENS_ERC20.sol/contract.ENS_ERC20.md)
+  - [IENSHelper](src/ENS_ERC20.sol/interface.IENSHelper.md)
+  - [ENS_ERC20_FACTORY](src/ENS_ERC20.sol/contract.ENS_ERC20_FACTORY.md)

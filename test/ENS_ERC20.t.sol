@@ -2,11 +2,10 @@
 pragma solidity ^0.8.19;
 
 import {Test} from "../lib/forge-std/src/Test.sol";
+import {ENS_ERC20, ENS_ERC20_FACTORY} from "../src/ENS_ERC20.sol";
 
-import {NameToken, NameTokenFactory} from "../src/NameToken.sol";
-
-contract NameTokenTest is Test {
-    NameTokenFactory factory;
+contract ENS_ERC20_TEST is Test {
+    ENS_ERC20_FACTORY factory;
 
     string constant name = "z0r0z";
     address constant Z0R0Z_DOT_ETH = 0x1C0Aa8cCD568d90d61659F060D1bFb1e6f855A20;
@@ -14,7 +13,7 @@ contract NameTokenTest is Test {
 
     function setUp() public payable {
         vm.createSelectFork(vm.rpcUrl("main"));
-        factory = new NameTokenFactory();
+        factory = new ENS_ERC20_FACTORY();
     }
 
     function testCreateToken() public payable {
@@ -22,7 +21,7 @@ contract NameTokenTest is Test {
     }
 
     function testTokenNode() public payable {
-        NameToken token = NameToken(factory.createToken(znode));
+        ENS_ERC20 token = ENS_ERC20(factory.createToken(znode));
         assertEq(token.node(), znode);
     }
 }
